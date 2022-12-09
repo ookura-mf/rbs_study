@@ -1,3 +1,8 @@
+target :lib do
+  signature "sig"
+  check "simple_example"
+end
+
 # D = Steep::Diagnostic
 #
 # target :lib do
