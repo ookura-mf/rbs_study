@@ -1,9 +1,9 @@
 # Classes
 class TennisPlayer
-  attr_accessor name: untyped
-  attr_accessor level: untyped
-  def initialize: (name: untyped, level: untyped) -> void
-  def spin: (direction: untyped) -> untyped
-  def slice: (direction: untyped) -> untyped
+  attr_accessor name: String
+  attr_accessor level: Integer
+  def initialize: (name: String, level: Integer) -> void
+  def spin: (direction: Integer) -> Integer
+  def slice: (direction: Integer) -> Integer
   def analyze: -> {forehand: Integer, backhand: Integer, serve: Integer, description: String}
 end
