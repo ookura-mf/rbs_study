@@ -1,0 +1,13 @@
+# Classes
+class TennisPlayer
+  attr_accessor name: String
+  attr_accessor level: Integer
+
+  def initialize: (name: String, level: Integer) -> void
+
+  def spin: (direction: Integer) -> Integer
+
+  def slice: (direction: Integer) -> Integer
+
+  def analyze: (power: Integer, description: String) -> { forehand: Integer, backhand: Integer, serve: Integer, description: String }
+end
