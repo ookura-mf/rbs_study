@@ -14,12 +14,12 @@ class TennisPlayer
     direction * -1
   end
 
-  def analyze
+  def analyze(input:)
     {
-      forehand: 1,
-      backhand: 1,
-      serve: 3,
-      description: "hogefuga",
+      forehand: input[:power].to_s,
+      backhand: input[:power] * 1,
+      serve: input[:power] * 10,
+      description: input[:description],
     }
   end
 end
