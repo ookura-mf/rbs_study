@@ -16,10 +16,10 @@ class TennisPlayer
 
   def analyze(power:, description:)
     {
-      forehand: input[:power].to_s,
-      backhand: input[:power] * 1,
-      serve: input[:power] * 10,
-      description: input[:description],
+      forehand: power * 2,
+      backhand: power * 1,
+      serve: power * 10,
+      description: description,
     }
   end
 end
