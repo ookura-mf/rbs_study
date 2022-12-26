@@ -9,5 +9,5 @@ class TennisPlayer
 
   def slice: (direction: Integer) -> Integer
 
-  def analyze: (input: untyped) -> { forehand: Integer, backhand: Integer, serve: Integer, description: String }
+  def analyze: (power: Integer, description: String) -> { forehand: Integer, backhand: Integer, serve: Integer, description: String }
 end
